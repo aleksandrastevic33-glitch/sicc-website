@@ -1,9 +1,4 @@
-/* ─── Sicc i18n ────────────────────────────────────────────────
-   Language strings for EN (English) and HR (Croatian).
-   t('key')           — returns string in current language
-   pt(product, field) — returns localised product field
-   setLang('hr'|'en') — switches language, persists, refreshes
-   ─────────────────────────────────────────────────────────── */
+/*  langs */
 
 var SICC_LANG = (function() {
   try { return localStorage.getItem('sicc-lang') || 'en'; } catch(e) { return 'en'; }
@@ -11,9 +6,9 @@ var SICC_LANG = (function() {
 
 var SICC_I18N = {
 
-  /* ══════════════════════════════════════════════════════════
-     ENGLISH
-     ══════════════════════════════════════════════════════════ */
+  /* ---------------------------------------------------------
+   ENG
+   --------------------------------------------------------- */
   en: {
     lang_label: 'HR',
 
@@ -144,9 +139,9 @@ var SICC_I18N = {
     products: {}  /* English reads directly from SICC_PRODUCTS */
   },
 
-  /* ══════════════════════════════════════════════════════════
-     CROATIAN
-     ══════════════════════════════════════════════════════════ */
+  /* ---------------------------------------------------------
+   CRO
+   --------------------------------------------------------- */
   hr: {
     lang_label: 'EN',
 
