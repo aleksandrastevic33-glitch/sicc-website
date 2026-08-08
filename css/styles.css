@@ -1,9 +1,4 @@
-/* ═══════════════════════════════════════════════════════════
-   SICC — from skin to skin.
-   Stylesheet — all pages, all components
-   ═══════════════════════════════════════════════════════════ */
-
-/* ── Open Sans (Google Fonts) ───────────────────── */
+/* Open Sans */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
 @font-face {
@@ -14,7 +9,7 @@
   font-display: swap;
 }
 
-/* ── CSS Custom Properties ───────────────────────────────── */
+/* CSS Custom Properties */
 :root {
   --bg: #ffffff;
   --bg-off: #f8f8f8;
@@ -38,7 +33,7 @@
   --t-slow: 0.5s;
 }
 
-/* ── Reset ───────────────────────────────────────────────── */
+/* Reset */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { font-size: 16px; scroll-behavior: smooth; }
 body {
@@ -62,7 +57,7 @@ h1, h2, h3, h4, strong, b, .btn, .menu-link, .section-label, .copy-interlude-tex
   font-family: var(--display-font);
 }
 
-/* ── Utility ─────────────────────────────────────────────── */
+/* Utility */
 .sr-only {
   position: absolute; width: 1px; height: 1px;
   padding: 0; margin: -1px; overflow: hidden;
@@ -76,9 +71,9 @@ h1, h2, h3, h4, strong, b, .btn, .menu-link, .section-label, .copy-interlude-tex
 }
 
 
-/* ══════════════════════════════════════════════════════════
+/* ---------------------------------------------------------
    NAV
-   ══════════════════════════════════════════════════════════ */
+   --------------------------------------------------------- */
 #site-nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -167,9 +162,9 @@ h1, h2, h3, h4, strong, b, .btn, .menu-link, .section-label, .copy-interlude-tex
 }
 
 
-/* ══════════════════════════════════════════════════════════
-   FULL-SCREEN MENU
-   ══════════════════════════════════════════════════════════ */
+/* ---------------------------------------------------------
+   MENU
+   --------------------------------------------------------- */
 .menu-overlay {
   position: fixed;
   inset: 0;
@@ -241,9 +236,9 @@ h1, h2, h3, h4, strong, b, .btn, .menu-link, .section-label, .copy-interlude-tex
 }
 
 
-/* ══════════════════════════════════════════════════════════
-   CART SIDEBAR
-   ══════════════════════════════════════════════════════════ */
+/* ---------------------------------------------------------
+   CART
+   --------------------------------------------------------- */
 .cart-overlay {
   position: fixed;
   inset: 0;
@@ -355,9 +350,9 @@ h1, h2, h3, h4, strong, b, .btn, .menu-link, .section-label, .copy-interlude-tex
 }
 
 
-/* ══════════════════════════════════════════════════════════
+/* ---------------------------------------------------------
    BUTTONS
-   ══════════════════════════════════════════════════════════ */
+   --------------------------------------------------------- */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -388,9 +383,9 @@ h1, h2, h3, h4, strong, b, .btn, .menu-link, .section-label, .copy-interlude-tex
 .btn--large { padding: 18px 40px; font-size: 14px; }
 
 
-/* ══════════════════════════════════════════════════════════
+/* ---------------------------------------------------------
    HERO
-   ══════════════════════════════════════════════════════════ */
+   --------------------------------------------------------- */
 .hero {
   position: relative;
   width: 100%;
@@ -498,9 +493,9 @@ h1, h2, h3, h4, strong, b, .btn, .menu-link, .section-label, .copy-interlude-tex
 }
 
 
-/* ══════════════════════════════════════════════════════════
-   HOME — CONTINUOUS SCROLL SECTIONS
-   ══════════════════════════════════════════════════════════ */
+/* ---------------------------------------------------------
+   HOME
+   --------------------------------------------------------- */
 .home-content { position: relative; }
 .home-content > *:not(.home-mountain-bg):not(.page-deco) {
   position: relative;
@@ -520,7 +515,7 @@ h1, h2, h3, h4, strong, b, .btn, .menu-link, .section-label, .copy-interlude-tex
   opacity: 0.45;
 }
 
-/* ── Decorative product accessories ─ */
+/* ── Decorative shit ─ */
 .page-deco {
   position: absolute;
   inset: 0;
@@ -710,9 +705,9 @@ h1, h2, h3, h4, strong, b, .btn, .menu-link, .section-label, .copy-interlude-tex
 }
 
 
-/* ══════════════════════════════════════════════════════════
-   PRODUCT TILE (shared: home grid + shop grid)
-   ══════════════════════════════════════════════════════════ */
+/* ---------------------------------------------------------
+   PRODUCT TILE
+   --------------------------------------------------------- */
 .product-tile {
   position: relative;
   background: var(--bg-off);
@@ -810,9 +805,9 @@ h1, h2, h3, h4, strong, b, .btn, .menu-link, .section-label, .copy-interlude-tex
 }
 
 
-/* ══════════════════════════════════════════════════════════
-   SHOP PAGE
-   ══════════════════════════════════════════════════════════ */
+/* ---------------------------------------------------------
+   SHOPPING BABY SLAY
+   --------------------------------------------------------- */
 .shop-page {
   padding: calc(var(--nav-h) + 24px) var(--gutter) 120px;
 }
@@ -855,9 +850,9 @@ h1, h2, h3, h4, strong, b, .btn, .menu-link, .section-label, .copy-interlude-tex
 }
 
 
-/* ══════════════════════════════════════════════════════════
-   PRODUCT FULL PAGE
-   ══════════════════════════════════════════════════════════ */
+/* ---------------------------------------------------------
+   PRODUCT PAGE
+   --------------------------------------------------------- */
 .product-page { padding-top: var(--nav-h); min-height: 100vh; }
 
 .product-page-nav {
@@ -886,7 +881,7 @@ h1, h2, h3, h4, strong, b, .btn, .menu-link, .section-label, .copy-interlude-tex
   align-items: start;
 }
 
-/* ── Gallery (left column) ─ */
+/* ── Gallery (left) ─ */
 .product-page-gallery {
   position: sticky;
   top: calc(var(--nav-h) + 24px);
@@ -936,7 +931,7 @@ img[src*="kolo-pendant-solid-3"] {
   object-fit: cover;
 }
 
-/* ── Details (right column) ─ */
+/* ── Details (right) ─ */
 .product-page-details {
   display: flex;
   flex-direction: column;
@@ -1041,9 +1036,9 @@ img[src*="kolo-pendant-solid-3"] {
   margin-top: 6px;
 }
 
-/* ══════════════════════════════════════════════════════════
-   PRODUCT DETAIL MODAL
-   ══════════════════════════════════════════════════════════ */
+/* ---------------------------------------------------------
+   PRODUCT DETAIOL MODAL
+   --------------------------------------------------------- */
 .product-modal-backdrop {
   position: fixed;
   inset: 0;
@@ -1255,9 +1250,9 @@ img[src*="kolo-pendant-solid-3"] {
 }
 
 
-/* ══════════════════════════════════════════════════════════
-   TRY-ON OVERLAY
-   ══════════════════════════════════════════════════════════ */
+/* ---------------------------------------------------------
+   TRY-ON !!!!!!!!!!!!!!!!!!!
+   --------------------------------------------------------- */
 .tryon-overlay {
   position: fixed;
   inset: 0;
@@ -1353,9 +1348,9 @@ img[src*="kolo-pendant-solid-3"] {
 }
 
 
-/* ══════════════════════════════════════════════════════════
+/* ---------------------------------------------------------
    ABOUT PAGE
-   ══════════════════════════════════════════════════════════ */
+   --------------------------------------------------------- */
 .about-page { padding-top: var(--nav-h); position: relative; }
 .about-hero {
   padding: 80px var(--gutter) 80px;
@@ -1508,9 +1503,9 @@ img[src*="kolo-pendant-solid-3"] {
 }
 
 
-/* ══════════════════════════════════════════════════════════
+/* ---------------------------------------------------------
    CONTACT PAGE
-   ══════════════════════════════════════════════════════════ */
+   --------------------------------------------------------- */
 .contact-page { padding-top: var(--nav-h); position: relative; }
 .contact-inner {
   max-width: 640px;
@@ -1602,9 +1597,9 @@ img[src*="kolo-pendant-solid-3"] {
 }
 
 
-/* ══════════════════════════════════════════════════════════
-   404 PAGE
-   ══════════════════════════════════════════════════════════ */
+/* ---------------------------------------------------------
+   404 ERROR
+   --------------------------------------------------------- */
 .not-found-page {
   padding-top: var(--nav-h);
   min-height: 100svh;
@@ -1655,9 +1650,9 @@ img[src*="kolo-pendant-solid-3"] {
 }
 
 
-/* ══════════════════════════════════════════════════════════
+/* ---------------------------------------------------------
    CHECKOUT PAGE
-   ══════════════════════════════════════════════════════════ */
+   --------------------------------------------------------- */
 .checkout-page { padding-top: var(--nav-h); }
 .checkout-inner {
   max-width: 680px;
@@ -1713,9 +1708,9 @@ img[src*="kolo-pendant-solid-3"] {
 }
 
 
-/* ══════════════════════════════════════════════════════════
+/* ---------------------------------------------------------
    FOOTER
-   ══════════════════════════════════════════════════════════ */
+   --------------------------------------------------------- */
 .site-footer {
   background: var(--text);
   color: var(--bg);
@@ -1803,9 +1798,9 @@ img[src*="kolo-pendant-solid-3"] {
 .footer-bottom a:hover { color: var(--bg); }
 
 
-/* ══════════════════════════════════════════════════════════
-   LIGHTBOX (image zoom)
-   ══════════════════════════════════════════════════════════ */
+/* ---------------------------------------------------------
+   LIGHTBOX (zoom na fotkama)
+   --------------------------------------------------------- */
 .lightbox {
   position: fixed;
   inset: 0;
@@ -1833,9 +1828,9 @@ img[src*="kolo-pendant-solid-3"] {
 .lightbox-close:hover { color: #fff; }
 
 
-/* ══════════════════════════════════════════════════════════
-   RESPONSIVE
-   ══════════════════════════════════════════════════════════ */
+/* ---------------------------------------------------------
+   RESPONSIVITY
+   --------------------------------------------------------- */
 @media (max-width: 900px) {
   .shop-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1984,9 +1979,9 @@ img[src*="kolo-pendant-solid-3"] {
 }
 
 
-/* ══════════════════════════════════════════════════════════
-   PAGE TRANSITIONS
-   ══════════════════════════════════════════════════════════ */
+/* ---------------------------------------------------------
+   PAGE TRANS
+   --------------------------------------------------------- */
 #app {
   animation: page-fade-in 0.4s var(--ease-out) both;
 }
@@ -2003,9 +1998,9 @@ img[src*="kolo-pendant-solid-3"] {
 }
 
 
-/* ══════════════════════════════════════════════════════════
-   PLACEHOLDER PRODUCT IMAGES (until real photos are added)
-   ══════════════════════════════════════════════════════════ */
+/* ---------------------------------------------------------
+   IMAGE PLACEHOLDER
+   --------------------------------------------------------- */
 .img-placeholder {
   width: 100%;
   height: 100%;
@@ -2027,9 +2022,9 @@ img[src*="kolo-pendant-solid-3"] {
 .img-placeholder svg { opacity: 0.3; }
 
 
-/* ══════════════════════════════════════════════════════════
-   SCROLL ANIMATIONS (Intersection Observer)
-   ══════════════════════════════════════════════════════════ */
+/* ---------------------------------------------------------
+   SCROLL ANIMATIONS
+   --------------------------------------------------------- */
 .reveal {
   opacity: 0;
   transform: translateY(24px);
