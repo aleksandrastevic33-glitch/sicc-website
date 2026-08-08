@@ -1,8 +1,4 @@
-/* ─── Sicc SPA Router ────────────────────────────────────────
-   Hash-based routing. Works without a server for most features.
-   Camera (try-on) requires HTTPS or localhost — use VS Code
-   Live Server (right-click index.html → Open with Live Server).
-   ─────────────────────────────────────────────────────────── */
+/* lesgetit */
 
 (function() {
 
@@ -46,7 +42,7 @@
   /* ── Expose router for i18n refresh ─────── */
   window.SiccRouter = { refresh: route };
 
-  /* ── Init ───────────────────────────────── */
+  /* ── INNIT (british accent) ───────────────────────────────── */
   function init() {
     SiccNav.init();
     SiccCart.init();
