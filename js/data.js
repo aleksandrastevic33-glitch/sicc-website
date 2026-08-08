@@ -1,10 +1,6 @@
-/* ─── SICC Product Catalog ─────────────────────────────────
-   All product data. Add real image paths when photos are ready.
-   ─────────────────────────────────────────────────────────── */
-
 var SICC_PRODUCTS = [
 
-  /* ── PENDANTS ─────────────────────────────── */
+  /* ── Pendants ─────────────────────────────── */
   {
     id: 'kolo-pendant-solid',
     name: 'Kolo Pendant – Solid',
@@ -52,7 +48,7 @@ var SICC_PRODUCTS = [
     featured: true
   },
 
-  /* ── EARRINGS ─────────────────────────────── */
+  /* ── Earrings ─────────────────────────────── */
   {
     id: 'trokut-earrings',
     name: 'Trokut Earrings',
@@ -99,7 +95,7 @@ var SICC_PRODUCTS = [
     featured: true
   },
 
-  /* ── RINGS ────────────────────────────────── */
+  /* ── Rings (no ear) ────────────────────────────────── */
   {
     id: 'kolo-ring-masculine',
     name: 'Kolo Ring – Masculine',
@@ -146,7 +142,7 @@ var SICC_PRODUCTS = [
     featured: false
   },
 
-  /* ── CHOKER ───────────────────────────────── */
+  /* ── Choker O.0  ───────────────────────────────── */
   {
     id: 'mreza-choker',
     name: 'Mreža Choker',
@@ -171,7 +167,7 @@ var SICC_PRODUCTS = [
     featured: false
   },
 
-  /* ── SEPTUMS ──────────────────────────────── */
+  /* ── Septums ──────────────────────────────── */
   {
     id: 'polukrug-septum',
     name: 'Polukrug Septum',
