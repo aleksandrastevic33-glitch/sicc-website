@@ -1,6 +1,5 @@
-/* ─── Try-On Camera Feature ─────────────────────────────────
-   Click anywhere on the camera view to place the jewelry.
-   Scroll / pinch to resize. Camera requires localhost / HTTPS.
+/* ─── Camera ─────────────────────────────────
+   This should work better - temporary solution.
    ─────────────────────────────────────────────────────────── */
 
 var SiccTryon = (function() {
@@ -21,7 +20,7 @@ var SiccTryon = (function() {
   var lastPinchDist = 0;
   var pinching    = false;
 
-  /* ── Init ─────────────────────────────────── */
+  /* ── Innit! ─────────────────────────────────── */
   function init() {
     overlay     = document.getElementById('tryon-overlay');
     closeBtn    = document.getElementById('tryon-close');
@@ -116,7 +115,7 @@ var SiccTryon = (function() {
     jewelryWrap.appendChild(img);
     currentImg = img;
 
-    /* ── Click / tap to place ─────────────── */
+    /* ── Click/tap to place ─────────────── */
     function placeAt(clientX, clientY) {
       var rect = jewelryWrap.getBoundingClientRect();
       var x = clientX - rect.left;
