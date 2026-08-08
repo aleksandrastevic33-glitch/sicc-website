@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 320" fill="none">
+  <!-- Cross / nail symbol — Sicanje needle motif -->
+  <!-- Traced from the brand asset (image 5) -->
+
+  <!-- Vertical stroke — tapers to point at bottom, rounded at top -->
+  <path d="M110 14 C114 14 120 20 120 30 L118 240 C118 260 114 278 110 290 C106 278 102 260 102 240 L100 30 C100 20 106 14 110 14 Z"
+        fill="#000"/>
+
+  <!-- Diagonal crossbar — wide in middle, pointed at both ends -->
+  <path d="M22 138 C28 132 48 126 68 116 L110 100 L152 116 C172 126 192 132 198 138 C192 144 172 150 152 160 L110 176 L68 160 C48 150 28 144 22 138 Z"
+        fill="#000"/>
+
+  <!-- Dot upper-right -->
+  <circle cx="154" cy="98" r="10" fill="#000"/>
+
+  <!-- Dot lower-left -->
+  <circle cx="66" cy="178" r="10" fill="#000"/>
+</svg>

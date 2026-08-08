@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 130" fill="none">
+  <!-- Replace this file with your actual exported logo (PNG or SVG) -->
+  <!-- SICC letterforms: S + / + C + C with horizontal bar -->
+
+  <!-- S -->
+  <path d="M22 28 C22 28 62 22 68 38 C74 54 32 50 30 66 C28 82 72 78 72 78"
+        stroke="#000" stroke-width="14" stroke-linecap="round" fill="none"/>
+
+  <!-- / (I) -->
+  <line x1="102" y1="20" x2="82" y2="90" stroke="#000" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- C (left bracket) -->
+  <path d="M170 24 C150 24 120 38 120 55 C120 72 150 82 170 82"
+        stroke="#000" stroke-width="14" stroke-linecap="round" fill="none"/>
+
+  <!-- C (right bracket, slightly open) -->
+  <path d="M260 24 C240 24 210 38 210 55 C210 72 240 82 260 82"
+        stroke="#000" stroke-width="14" stroke-linecap="round" fill="none"/>
+
+  <!-- Horizontal bar cutting through all forms -->
+  <rect x="0" y="47" width="310" height="10" fill="#000"/>
+
+  <!-- Tagline -->
+  <text x="0" y="118"
+        font-family="'Akrobat','Inter','Helvetica Neue',Arial,sans-serif"
+        font-weight="300"
+        font-size="14"
+        letter-spacing="3.5"
+        fill="#000">from skin to skin.</text>
+</svg>

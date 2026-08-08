@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sicc. Unisex jewelry inspired by traditional Croatian Sicanje tattoo motifs. From skin to skin.">
+  <title>Sicc — from skin to skin.</title>
+
+  <!-- Local fonts from /fonts/ -->
+  <!-- Akrobat fonts are loaded via css/styles.css @font-face declarations -->
+
+  <link rel="icon" type="image/svg+xml" href="images/symbol-black.png">
+  <link rel="stylesheet" href="css/styles.css?v=13">
+</head>
+<body>
+
+  <!-- ── NAV ─────────────────────────────────────────── -->
+  <header id="site-nav">
+    <button id="menu-btn" class="menu-btn" aria-label="Open menu" aria-expanded="false">
+      <img src="images/symbol-black.png" alt="" class="menu-icon" aria-hidden="true">
+    </button>
+
+    <a href="#/" class="nav-logo-link" aria-label="Sicc home">
+      <img src="images/logo-black-notext.png" alt="Sicc" class="nav-logo">
+    </a>
+
+    <div class="nav-right">
+    <button id="lang-btn" class="lang-btn" aria-label="Switch language" onclick="setLang(SICC_LANG === 'en' ? 'hr' : 'en')">HR</button>
+
+    <button id="cart-btn" class="cart-btn" aria-label="Open cart">
+      <span class="cart-icon">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1H3.5L5.5 14H17L19.5 5H5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="8" cy="18" r="1.5" fill="currentColor"/>
+          <circle cx="15" cy="18" r="1.5" fill="currentColor"/>
+        </svg>
+      </span>
+      <span id="cart-count" class="cart-count" hidden>0</span>
+    </button>
+    </div>
+  </header>
+
+  <!-- ── FULL-SCREEN MENU ──────────────────────────────── -->
+  <div id="menu-overlay" class="menu-overlay" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Site menu">
+    <button id="menu-close" class="menu-close" aria-label="Close menu">
+      <img src="images/logo-black-notext.png" alt="" class="menu-icon menu-icon--white" aria-hidden="true">
+    </button>
+
+    <nav class="menu-nav" aria-label="Main navigation">
+      <ul class="menu-list">
+        <li><a href="#/" class="menu-link" data-label="01">Home</a></li>
+        <li><a href="#/shop" class="menu-link" data-label="02">Shop</a></li>
+        <li><a href="#/about" class="menu-link" data-label="03">About</a></li>
+        <li><a href="#/contact" class="menu-link" data-label="04">Contact</a></li>
+      </ul>
+    </nav>
+
+    <p class="menu-footer-line">Sicc. from skin to skin.</p>
+  </div>
+
+  <!-- ── CART SIDEBAR ──────────────────────────────────── -->
+  <div id="cart-overlay" class="cart-overlay" aria-hidden="true"></div>
+  <aside id="cart-sidebar" class="cart-sidebar" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-header">
+      <h2 class="cart-title">Your steel.</h2>
+      <button id="cart-close" class="cart-close" aria-label="Close cart">✕</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div id="cart-footer" class="cart-footer" hidden>
+      <div class="cart-total-row">
+        <span>Total</span>
+        <span id="cart-total">€0</span>
+      </div>
+      <a href="#/checkout" id="cart-checkout-btn" class="btn btn--full">Checkout</a>
+      <a href="#/shop" id="cart-shop-btn" class="btn btn--ghost btn--full">Keep looking →</a>
+      <p class="cart-warning">Leaving it? We'll wait. Not long.</p>
+    </div>
+  </aside>
+
+  <!-- ── TRY-ON OVERLAY ────────────────────────────────── -->
+  <div id="tryon-overlay" class="tryon-overlay" aria-hidden="true">
+    <div class="tryon-inner">
+      <div class="tryon-header">
+        <h3 class="tryon-title">Try it on.</h3>
+        <button id="tryon-close" class="tryon-close" aria-label="Close try-on">✕</button>
+      </div>
+      <div class="tryon-body">
+        <div class="tryon-camera-wrap">
+          <video id="tryon-video" class="tryon-video" autoplay playsinline muted></video>
+          <canvas id="tryon-canvas" class="tryon-canvas"></canvas>
+          <div id="tryon-jewelry" class="tryon-jewelry"></div>
+        </div>
+        <div class="tryon-controls">
+          <p class="tryon-hint">Tap anywhere on the camera view to place the jewelry. Scroll or pinch to resize.</p>
+          <div class="tryon-buttons">
+            <button id="tryon-flip" class="btn btn--ghost">Flip camera</button>
+            <button id="tryon-capture" class="btn">Save photo</button>
+          </div>
+          <p id="tryon-error" class="tryon-error" hidden></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── MAIN APP ──────────────────────────────────────── -->
+  <main id="app" role="main"></main>
+
+  <!-- ── SCRIPTS (order matters) ──────────────────────── -->
+  <script src="js/data.js?v=13"></script>
+  <script src="js/i18n.js?v=13"></script>
+  <script src="js/cart.js?v=13"></script>
+  <script src="js/navigation.js?v=13"></script>
+  <script src="js/tryon.js?v=13"></script>
+  <script src="js/pages.js?v=13"></script>
+  <script src="js/app.js?v=13"></script>
+</body>
+</html>

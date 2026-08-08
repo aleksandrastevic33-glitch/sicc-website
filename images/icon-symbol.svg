@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 180" fill="none">
+  <!-- S/O symbol mark — nav button, favicon, decorative motif -->
+  <!-- Replace with your actual exported symbol SVG -->
+
+  <!-- S -->
+  <path d="M18 38 C18 38 58 30 64 48 C70 66 26 62 24 80 C22 98 66 92 68 92"
+        stroke="#000" stroke-width="16" stroke-linecap="round" fill="none"/>
+
+  <!-- / -->
+  <line x1="100" y1="28" x2="78" y2="108" stroke="#000" stroke-width="16" stroke-linecap="round"/>
+
+  <!-- C -->
+  <path d="M170 34 C148 34 116 50 116 68 C116 86 148 98 170 98"
+        stroke="#000" stroke-width="16" stroke-linecap="round" fill="none"/>
+
+  <!-- ) second C -->
+  <path d="M260 34 C238 34 206 50 206 68 C206 86 238 98 260 98"
+        stroke="#000" stroke-width="16" stroke-linecap="round" fill="none"/>
+
+  <!-- Horizontal bar -->
+  <rect x="0" y="59" width="280" height="12" fill="#000"/>
+</svg>
