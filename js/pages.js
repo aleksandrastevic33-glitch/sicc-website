@@ -1,8 +1,3 @@
-/* ─── Page Renderers ────────────────────────────────────────
-   Each function renders into #app.
-   All user-facing strings come from t() / pt() in i18n.js.
-   ─────────────────────────────────────────────────────────── */
-
 /* ══ Shared helpers ══════════════════════════════════════════ */
 
 function escHtml(s) {
@@ -206,7 +201,7 @@ function renderHome() {
 }
 
 
-/* ══ SHOP PAGE ══════════════════════════════════════════════ */
+/* SHOP PAGE */
 function renderShop() {
   var app = document.getElementById('app');
 
@@ -231,7 +226,7 @@ function renderShop() {
 }
 
 
-/* ══ PRODUCT PAGE ════════════════════════════════════════════ */
+/* PRODUCT PAGE */
 function renderProduct(productId) {
   var product = getProduct(productId);
   if (!product) { renderNotFound(); return; }
@@ -333,7 +328,7 @@ function renderProduct(productId) {
 }
 
 
-/* ══ ABOUT PAGE ═════════════════════════════════════════════ */
+/* ABOUT PAGE */
 function renderAbout() {
   var app = document.getElementById('app');
 
@@ -436,7 +431,7 @@ function renderAbout() {
 }
 
 
-/* ══ CONTACT PAGE ═══════════════════════════════════════════ */
+/* CONTACT PAGE */
 function renderContact() {
   var app = document.getElementById('app');
 
@@ -493,7 +488,7 @@ function renderContact() {
 }
 
 
-/* ══ 404 PAGE ════════════════════════════════════════════════ */
+/* 404 PAGE */
 function renderNotFound() {
   var app = document.getElementById('app');
   app.innerHTML = [
@@ -514,7 +509,7 @@ function renderNotFound() {
 }
 
 
-/* ══ CHECKOUT PAGE ═══════════════════════════════════════════ */
+/* CHECKOUT PAGE */
 function renderCheckout() {
   var app   = document.getElementById('app');
   var items = SiccCart.getItems();
