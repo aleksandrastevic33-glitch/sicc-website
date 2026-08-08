@@ -1,7 +1,3 @@
-/* ─── Cart ───────────────────────────────────────────────────
-   State persisted to localStorage. Sidebar open/close.
-   ─────────────────────────────────────────────────────────── */
-
 var SiccCart = (function() {
 
   var KEY = 'sicc_cart';
@@ -145,7 +141,7 @@ var SiccCart = (function() {
     });
   }
 
-  /* ── Open / Close ─────────────────────────── */
+  /* ── Open/close ─────────────────────────── */
   function open() {
     isOpen = true;
     sidebar.classList.add('open');
@@ -181,7 +177,7 @@ var SiccCart = (function() {
     clear:      clear,
     open:       open,
     close:      close,
-    render:     render   /* exposed for language refresh */
+    render:     render
   };
 
 })();
