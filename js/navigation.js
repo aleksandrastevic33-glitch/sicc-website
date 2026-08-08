@@ -1,5 +1,5 @@
 /* ─── Navigation ────────────────────────────────────────────
-   Handles: menu open/close, scroll effects, active link
+   menu open/close, scroll effects, active link
    ─────────────────────────────────────────────────────────── */
 
 var SiccNav = (function() {
@@ -76,7 +76,7 @@ var SiccNav = (function() {
     }
   }
 
-  /* Call after route changes to highlight active link */
+  /* Call after route changes - highlight active link */
   function setActiveLink(hash) {
     if (!menuLinks) return;
     menuLinks.forEach(function(link) {
