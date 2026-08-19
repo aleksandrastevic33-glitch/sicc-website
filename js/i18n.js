@@ -302,7 +302,7 @@ var SICC_I18N = {
     ],
 
     /* Contact */
-    contact_h1: "Razgovarajmo.",
+    contact_h1: "Javi Nam Se.",
     contact_sub: "Ili nemoj. Nećemo moliti.",
     contact_name_label: "Ime",
     contact_name_opt: "(neobavezno)",
